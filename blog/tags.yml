@@ -2,3 +2,18 @@ duyuru:
   label: Duyuru
   permalink: /duyuru
   description: Topluluk duyuruları
+
+rehber:
+  label: Rehber
+  permalink: /rehber
+  description: Adım adım anlatımlar
+
+gelistirici:
+  label: Geliştirici
+  permalink: /gelistirici
+  description: Uygulama geliştirme ve taşıma üzerine yazılar
+
+baslangic:
+  label: Başlangıç
+  permalink: /baslangic
+  description: HarmonyOS PC'ye yeni başlayanlar için

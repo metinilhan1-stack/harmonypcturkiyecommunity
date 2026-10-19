@@ -27,13 +27,13 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Topluluk',
-    to: '/docs/topluluk/katki',
-    linkLabel: 'Nasıl katkı verilir?',
+    title: 'Soru-Cevap',
+    to: '/soru-cevap',
+    linkLabel: 'Soru sorun',
     description: (
       <>
-        Rehber yazın, hata bildirin, taşıdığınız uygulamayı paylaşın. Bu site
-        topluluğun katkılarıyla büyür.
+        Takıldığınız bir yer mi var? Sorunuzu Türkçe sorun, topluluk cevaplasın.
+        Cevaplar herkesin işine yarasın diye kalıcı ve aranabilir.
       </>
     ),
   },

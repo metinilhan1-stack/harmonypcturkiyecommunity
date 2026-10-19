@@ -40,5 +40,5 @@ Hayır. HarmonyPC Türkiye gönüllülerin yürüttüğü gayriresmî bir toplul
 
 ### Sorumun cevabı burada yok. Ne yapmalıyım?
 
-Topluluğa sorun! Sorunuz ve cevabı başkalarının da işine yarayacaksa bu sayfaya
+[Soru-Cevap](/soru-cevap) bölümünde topluluğa sorun! Sorunuz ve cevabı başkalarının da işine yarayacaksa bu sayfaya
 eklenmesi için [katkı verebilirsiniz](../topluluk/katki.md).

@@ -12,6 +12,22 @@ const GITHUB_REPO = 'harmonypcturkiyecommunity';
 const isRootSite = GITHUB_REPO === `${GITHUB_ACCOUNT}.github.io`;
 const repoUrl = `https://github.com/${GITHUB_ACCOUNT}/${GITHUB_REPO}`;
 
+// Soru-Cevap ve blog yorumları GitHub Discussions üzerinde çalışır.
+// Kimlikler (ID) https://giscus.app adresinden alınır. Kategori kimliği boş
+// bırakılırsa yorum alanı gösterilmez; site yine de sorunsuz derlenir.
+const discussions = {
+  url: `${repoUrl}/discussions`,
+  // "Soru-Cevap" kategorisinin GitHub'daki adres adı (slug)
+  qaCategorySlug: 'soru-cevap',
+  giscus: {
+    repo: `${GITHUB_ACCOUNT}/${GITHUB_REPO}`,
+    repoId: 'R_kgDOVPPcTA',
+    // Blog yorumlarının saklandığı kategori
+    category: 'Blog Yorumları',
+    categoryId: '',
+  },
+};
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'HarmonyPC Türkiye',
@@ -36,6 +52,10 @@ const config = {
     locales: ['tr'],
   },
 
+  customFields: {
+    discussions,
+  },
+
   presets: [
     [
       'classic',
@@ -47,8 +67,11 @@ const config = {
           editUrl: `${repoUrl}/edit/main/`,
         },
         blog: {
-          blogTitle: 'Duyurular',
-          blogDescription: 'HarmonyPC Türkiye topluluğundan haberler ve duyurular',
+          blogTitle: 'Blog',
+          blogDescription: 'HarmonyPC Türkiye topluluğundan rehberler, haberler ve duyurular',
+          blogSidebarTitle: 'Tüm yazılar',
+          blogSidebarCount: 'ALL',
+          postsPerPage: 10,
           showReadingTime: true,
           editUrl: `${repoUrl}/edit/main/`,
           feedOptions: {
@@ -92,7 +115,8 @@ const config = {
             label: 'Rehberler',
           },
           {to: '/docs/tasinan-uygulamalar', label: 'Taşınan Uygulamalar', position: 'left'},
-          {to: '/blog', label: 'Duyurular', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/soru-cevap', label: 'Soru-Cevap', position: 'left'},
           {to: '/docs/topluluk/katki', label: 'Katkı Ver', position: 'right'},
           {href: repoUrl, label: 'GitHub', position: 'right'},
         ],
@@ -111,6 +135,8 @@ const config = {
           {
             title: 'Topluluk',
             items: [
+              {label: 'Soru-Cevap', to: '/soru-cevap'},
+              {label: 'Blog', to: '/blog'},
               {label: 'Topluluk kuralları', to: '/docs/topluluk/kurallar'},
               {label: 'Nasıl katkı verilir?', to: '/docs/topluluk/katki'},
               {label: 'Gizlilik', to: '/docs/topluluk/gizlilik'},
