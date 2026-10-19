@@ -24,7 +24,7 @@ const discussions = {
     repoId: 'R_kgDOVPPcTA',
     // Blog yorumlarının saklandığı kategori
     category: 'Blog Yorumları',
-    categoryId: '',
+    categoryId: 'DIC_kwDOVPPcTM4DI_Jn',
   },
 };
 
