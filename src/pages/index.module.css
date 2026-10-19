@@ -1,0 +1,36 @@
+/**
+ * Ana sayfaya özel stiller (CSS modülü, yalnızca bu sayfada geçerli).
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: var(--hpt-hero-bg);
+  color: var(--hpt-hero-fg);
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem 1rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.outlineButton {
+  color: var(--hpt-hero-fg);
+  border-color: var(--hpt-hero-fg);
+}
+
+.outlineButton:hover {
+  color: var(--hpt-hero-bg);
+  background: var(--hpt-hero-fg);
+}

@@ -1,0 +1,21 @@
+.features {
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.card {
+  height: 100%;
+  padding: 1.5rem;
+  border: 1px solid var(--hpt-card-border);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card p {
+  flex-grow: 1;
+}
+
+.column {
+  margin-bottom: 1.5rem;
+}

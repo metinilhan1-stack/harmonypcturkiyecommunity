@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="HarmonyPC Türkiye">
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#c8102e"/>
+  <path d="M19 18v28M19 32h18M37 18v28" stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <circle cx="48" cy="20" r="4" fill="#fff"/>
+</svg>
